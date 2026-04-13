@@ -29,7 +29,7 @@ inhere
 
 ### 🧰 Comandos utilizados
 
-```bash id="z6yq2r"
+```bash 
 ls
 ls -a
 cd
