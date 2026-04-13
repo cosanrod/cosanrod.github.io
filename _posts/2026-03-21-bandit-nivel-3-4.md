@@ -21,7 +21,7 @@ tags: [linux, ctf, basico]
 Encontrar la contraseña del siguiente nivel.
 La contraseña está almacenada en un archivo oculto dentro del directorio:
 
-```bash id="t0m2dw"
+```bash
 inhere
 ```
 
@@ -42,13 +42,13 @@ cat
 
 Primero listamos el contenido del directorio home:
 
-```bash id="g2c6cj"
+```bash 
 ls
 ```
 
 Salida:
 
-```bash id="1mrg9q"
+```bash 
 inhere
 ```
 
