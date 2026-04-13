@@ -54,43 +54,43 @@ inhere
 
 Entramos al directorio:
 
-```bash id="w6k8l9"
+```bash 
 cd inhere/
 ```
 
 Listamos su contenido:
 
-```bash id="6lq5z2"
+```bash 
 ls
 ```
 
 Salida:
 
-```bash id="t6u9e1"
+```bash 
 (empty)
 ```
 
 No vemos archivos porque están ocultos. Usamos la opción `-a` para mostrarlos:
 
-```bash id="g3d4kp"
+```bash 
 ls -a
 ```
 
 Salida:
 
-```bash id="i6w2bz"
+```bash 
 .  ..  ...Hiding-From-You
 ```
 
 Finalmente, leemos el archivo oculto:
 
-```bash id="tq2g4m"
+```bash
 cat ...Hiding-From-You
 ```
 
 Salida:
 
-```bash id="z9y1hv"
+```bash 
 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 ```
 
@@ -111,6 +111,6 @@ Por eso no veíamos el archivo al inicio.
 
 ### 🚩 Flag
 
-```bash id="j3c7vn"
+```bash 
 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 ```
