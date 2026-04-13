@@ -1,40 +1,67 @@
 ---
+
 title: "Bandit: Nivel 0 -> Nivel 1"
 date: 2026-03-21 12:00:00 -0600
 categories: [OverTheWire, Bandit]
 tags: [linux, ctf, basico]
 ---
 
-## Objetivo del Reto
-La contraseña para el siguiente nivel está almacenada en un archivo llamado `readme` dentro del directorio personal (*home*). Debemos obtenerla para conectarnos al usuario `bandit1` mediante SSH.
 
-## Datos de Conexión
+
+## 🗓️ 21-03-2026 — Bandit Level 0
+
+### 🔐 Credenciales
+
+* **Usuario:** `bandit0`
+* **Password:** `bandit0`
 * **Host:** `bandit.labs.overthewire.org`
 * **Puerto:** `2220`
-* **Usuario:** `bandit0`
-* **Contraseña:** `bandit0`
 
 ---
 
-## Solución
+### 🎯 Objetivo
 
-Una vez conectados al servidor, realizamos los siguientes pasos para encontrar la bandera:
-
-### 1. Enumeración de archivos
-Primero, listamos el contenido del directorio para confirmar la ubicación del archivo `readme`:
+Encontrar la contraseña del siguiente nivel.
+La contraseña está almacenada en un archivo llamado:
 
 ```bash
-bandit0@bandit:~$ ls
 readme
 ```
 
-### 2. Lectura del contenido
-Utilizamos el comando cat (concatenate) para mostrar el texto almacenado en el archivo:
+ubicado en el directorio home.
+
+---
+
+### 🧰 Comandos utilizados
 
 ```bash
-bandit0@bandit:~$ cat readme
+ls
+cat
 ```
-### Resultado de la ejecución:
+
+---
+
+### 💻 Solución paso a paso
+
+Primero listamos los archivos en el directorio:
+
+```bash
+ls
+```
+
+Salida:
+
+```bash
+readme
+```
+
+Luego, leemos el contenido del archivo:
+
+```bash
+cat readme
+```
+
+Salida:
 
 ```bash
 Congratulations on your first steps into the bandit game!!
@@ -42,11 +69,24 @@ Congratulations on your first steps into the bandit game!!
 The password you are looking for is: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 ```
 
-### Resumen Técnico
-ls: Utilizado para listar archivos y directorios.
-cat: Utilizado para leer y mostrar el contenido de archivos de texto en la terminal.
+---
 
-### Flag
+### 🧠 Explicación
+
+El archivo `readme` contiene directamente la contraseña del siguiente nivel.
+Para obtenerla, simplemente utilizamos:
+
+* `ls` para listar los archivos del directorio.
+* `cat` para visualizar el contenido del archivo.
+
+Este nivel introduce comandos básicos de navegación y lectura de archivos en Linux.
+
+---
+
+### 🚩 Flag
+
+```bash
 ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+```
 
 
