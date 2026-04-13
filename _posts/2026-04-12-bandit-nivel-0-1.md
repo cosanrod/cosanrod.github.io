@@ -49,4 +49,4 @@ cat: Utilizado para leer y mostrar el contenido de archivos de texto en la termi
 ### Flag
 ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
-[Siguiente Reto: Bandit Nivel 1]({% post_url 2026-04-12-bandit-nivel-1-2 %})]
+
