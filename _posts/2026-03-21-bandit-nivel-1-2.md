@@ -1,19 +1,17 @@
 ---
-
-title: "Bandit: Nivel 0 -> Nivel 1"
+title: "Bandit: Nivel 1 -> Nivel 2"
 date: 2026-03-21 12:00:00 -0600
 categories: [OverTheWire, Bandit]
 tags: [linux, ctf, basico]
 ---
 
-## 🗓️ 21-03-2026 — Bandit Level 0
+## 🗓️ 21-03-2026 — Bandit Level 1 -> 2
 
 ### 🔐 Credenciales
 
-* **Usuario:** `bandit0`
-* **Password:** `bandit0`
+* **Usuario:** `bandit1`
+* **Password:** `ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If`
 * **Host:** `bandit.labs.overthewire.org`
-* **Puerto:** `2220`
 
 ---
 
@@ -23,7 +21,7 @@ Encontrar la contraseña del siguiente nivel.
 La contraseña está almacenada en un archivo llamado:
 
 ```bash
-readme
+-
 ```
 
 ubicado en el directorio home.
@@ -35,6 +33,7 @@ ubicado en el directorio home.
 ```bash
 ls
 cat
+file
 ```
 
 ---
@@ -50,39 +49,58 @@ ls
 Salida:
 
 ```bash
-readme
+-
 ```
 
-Luego, leemos el contenido del archivo:
+El archivo tiene un nombre poco común (`-`), lo cual puede causar problemas porque este símbolo normalmente se interpreta como una opción en los comandos.
+
+Verificamos el tipo de archivo:
 
 ```bash
-cat readme
+file ./-
 ```
 
 Salida:
 
 ```bash
-Congratulations on your first steps into the bandit game!!
-[...]
-The password you are looking for is: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+./-: ASCII text
+```
+
+Finalmente, leemos el contenido del archivo usando:
+
+```bash
+cat ./-
+```
+
+Salida:
+
+```bash
+263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 ```
 
 ---
 
 ### 🧠 Explicación
 
-El archivo `readme` contiene directamente la contraseña del siguiente nivel.
-Para obtenerla, simplemente utilizamos:
+El nombre del archivo (`-`) puede ser interpretado por la terminal como un argumento especial en lugar de un nombre de archivo.
 
-* `ls` para listar los archivos del directorio.
-* `cat` para visualizar el contenido del archivo.
+Para evitar esto, usamos:
 
-Este nivel introduce comandos básicos de navegación y lectura de archivos en Linux.
+```bash
+./-
+```
+
+El `./` indica explícitamente que se trata de un archivo en el directorio actual, evitando confusiones con opciones del comando.
 
 ---
 
 ### 🚩 Flag
 
 ```bash
-ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 ```
+
+---
+
+Si sigues haciendo posts así de limpios, tu blog va a parecer writeups de nivel pro 👀
+Si quieres, en el siguiente te ayudo a hacerlo aún más “hacker aesthetic” 😏
