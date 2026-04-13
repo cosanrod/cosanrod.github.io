@@ -100,7 +100,3 @@ El `./` indica explícitamente que se trata de un archivo en el directorio actua
 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
 ```
 
----
-
-Si sigues haciendo posts así de limpios, tu blog va a parecer writeups de nivel pro 👀
-Si quieres, en el siguiente te ayudo a hacerlo aún más “hacker aesthetic” 😏
